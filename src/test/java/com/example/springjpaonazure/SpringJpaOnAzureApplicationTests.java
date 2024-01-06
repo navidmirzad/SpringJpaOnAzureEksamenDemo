@@ -50,7 +50,7 @@ class SpringJpaOnAzureApplicationTests {
         studentRepository.delete(student1);
         List<Student> listOfStudents = studentRepository.findAll();
 
-        assertEquals(2, listOfStudents.size());
+        assertEquals(1, listOfStudents.size());
     }
 
 

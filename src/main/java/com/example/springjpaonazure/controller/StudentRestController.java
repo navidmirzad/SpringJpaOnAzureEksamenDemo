@@ -22,4 +22,12 @@ public class StudentRestController {
         return listofStudents;
     }
 
+    @GetMapping("/")
+    public String welcome() {
+        String welcomeMessage = "Welcome to the frontpage of SpringJpaOnAzure. " +
+                "Current endpoints: /students";
+        return welcomeMessage;
+
+    }
+
 }
