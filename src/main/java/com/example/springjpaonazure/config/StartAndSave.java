@@ -27,7 +27,12 @@ public class StartAndSave implements CommandLineRunner {
         LocalDateTime birthDate2 = LocalDateTime.of(2002, 4, 5, 10, 0);
         student2.setBirthdate(birthDate2);
         studentRepository.save(student2);
-    }
 
+        Student student3 = new Student();
+        student3.setName("Naina Mirzad");
+        LocalDateTime birthDate3 = LocalDateTime.of(2002, 9, 2, 10, 0);
+        student3.setBirthdate(birthDate3);
+        studentRepository.save(student3);
+    }
 
 }
